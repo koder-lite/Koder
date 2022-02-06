@@ -17,17 +17,21 @@
 
 <body>
     <div class="container main-container">
-    <div class="input-group mb-3">
-        <input id="cfhandle" type="text" class="form-control" placeholder="Codeforces Handle" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick="getHandle()">Submit</button>
-    </div>
-
-        <h2 m-5>Hi <span id="username">Koi</span></h2>
-        <h3>Target:- 5</h3>
-        <h3>Completed:- 2</h3>
-
-
+        <div id="search-handle" class="input-group mb-3">
+            <input id="cfhandle" type="text" class="form-control" placeholder="Codeforces Handle"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                onClick="getHandle()">Submit</button>
+        </div>
+        <div class="user-details">
+            <span id="username"></span> <span>|</span>
+            <span id="rank"></span>
+            <span id="rating"></span>
+        </div>
+        <div>
+            <p>Target : 5</p>
+            <p>Completed : 2</p>
+        </div>
     </div>
 
     <script src="../static/js/all.min.js"></script>
@@ -37,5 +41,4 @@
     <script src="../content.js"></script>
 
 </body>
-
 </html>
