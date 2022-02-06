@@ -1,0 +1,23 @@
+{
+    "name": "Consistent-koder",
+    "description": "Track your submissions and achieve daily targets",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action":{
+        "default_popup": "templates/popup.html",
+        "default-icon": "static/assets/icon128.png"
+    },
+    "icons": {
+        "128": "static/assets/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "tabs"
+      ],
+    "chrome_url_overrides": {"newtab": "templates/mainpage.html"}
+}
