@@ -24,14 +24,35 @@
                 onClick="getHandle()">Submit</button>
         </div>
         <div class="user-details">
-            <span id="username"></span> <span>|</span>
+            <span id="username"></span>
             <span id="rank"></span>
             <span id="rating"></span>
         </div>
-        <div>
-            <p>Target : 5</p>
-            <p>Completed : 2</p>
+        <div class="current-target py-2">
+            <span class="py-2">Current Target</span><br />
+            <span class="py-2">From : mm/dd/yyyy --:--</span><br />
+            <span class="py-2">To : mm/dd/yyyy --:--</span><br />
+            <span class="py-2">Target Achieved : </span>
         </div>
+        <div class="set-target py-2">
+            <span>Set Target</span>
+            <form action="">
+                <div class="py-2">
+                    <label for="start-time">Start</label>
+                    <input type="datetime-local" id="start-time" name="start-time" class="">
+                </div>
+                <div class="py-2">
+                    <label for="end-time">End&nbsp;&nbsp;</label>
+                    <input type="datetime-local" id="end-time" name="end-time" class="">
+                </div>
+                <div class="py-2">
+                    <label for="end-time">No. of problems</label>
+                    <input type="number" id="no-of-problem" name="no-of-problem" style="width: 9.5em" class="">
+                </div>
+                <input type="submit" class="btn btn-outline-secondary">
+            </form>
+        </div>
+
     </div>
 
     <script src="../static/js/all.min.js"></script>
@@ -41,4 +62,5 @@
     <script src="../content.js"></script>
 
 </body>
+
 </html>

@@ -31,7 +31,7 @@ $(document).ready(function () {
       .then((data) => {
         rating = data.result[0].rating;
         rank = data.result[0].rank;
-        document.getElementById("username").innerHTML = userHandle;
+        document.getElementById("username").innerHTML = userHandle + " | ";
         document.getElementById("rank").innerHTML = rank;
         document.getElementById("rating").innerHTML = "(" + rating + ")";
         switch (rank) {
