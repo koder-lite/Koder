@@ -1,7 +1,5 @@
-/* dark-CSS */
-
 :root {
-  --gradient: linear-gradient(
+  /* --gradient: linear-gradient(
     45deg,
     #845ec2,
     #d65db1,
@@ -9,17 +7,19 @@
     #ff9671,
     #ffc75f,
     #f9f871
+  ); */
+  --gradient: linear-gradient(
+    45deg,
+    #000133,
+    #040348,
+    #0f3b57,
+    #214559,
+    #00626f,
+    #391285
   );
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: var(--gradient);
   background-size: 300%;
   background-position: left;
@@ -31,38 +31,31 @@ body {
   0% {
     background-position: left;
   }
+  50% {
+    background-position: center;
+  }
   100% {
     background-position: right;
   }
 }
 
-.text {
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-style: italic;
-  color: #ff9671;
-  background-image: var(--gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  padding: 0% 2rem;
-  background-size: 15%;
-  background-position: right;
-  animation: text-animation 10s infinite alternate;
+.custom-size{
+  height: 5rem;
+  width: 5rem;
+  border-width: 0.25rem;
+  border-color: white;
 }
 
-@keyframes text-animation {
-  0% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
+.circle{
+  border-radius: 100%;
 }
 
-.container {
-  padding: 0% 10%;
-  background: white;
-  text-align: center;
+.custom-bg{
+  background-color: #391285;
+  border: 1px solid white;
+}
+
+.custom-bg2{
+  background-color: #980036;
+  border: 1px solid white;
 }
