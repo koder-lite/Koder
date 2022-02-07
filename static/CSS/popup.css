@@ -1,10 +1,41 @@
 .main-container{
     margin: 0;
-    width: 300px;
+    width: 400px;
     height: 500px;
     color: #d41b24;
     background-color: #282D33;
     border: solid 5px white;
     font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: 800;
     padding: 25px;
+}
+
+.user-details{
+    margin-bottom: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.newbie{
+    color: gray;
+}
+.pupil{
+    color: green;
+}
+.specialist{
+    color: cyan;
+}
+.expert{
+    color: blue;
+}
+.cm{
+    color: violet;
+}
+.master{
+    color: orange;
+}
+.grandmaster{
+    color: red;
 }
